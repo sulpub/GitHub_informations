@@ -34,6 +34,9 @@ Open in your web browser the project in github that you want to clone.
 
 Copy and paste the link.
 
+![Copy button using for clone project](https://github.com/sulpub/GitHub_informations/images/github_commit.png)
+
+
 To clone project set this command in a specific directory in your computer :
 ```
 git clone copy_paste_link.git
