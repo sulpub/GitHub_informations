@@ -43,11 +43,18 @@ To clone project set this command in a specific directory in your computer :
 ```
 git clone copy_paste_link.git
 ```
-## Upload and existing project
+## Upload an existing project
 
-Set this command :
+When you have finish the modifictaion of your file, you must do theses points
+ 1. Add on stage
+ 2. Commit the stage on on local commit
+ 3. Push the modification on the external server (github)
+
+The command list to do this is :
 ```
-TO FILL
+git add file_with_modification 
+git commit -m "add informations on the commit"
+git push 
 ```
 
 ## Commit a project
