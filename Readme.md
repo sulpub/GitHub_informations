@@ -68,6 +68,12 @@ To receive the last external modification, send this command :
 git pull
 ```
 
+## SEE the status of the file
+This command see you the status of you file :
+```
+git status
+```
+
 ## Branch
 
 To know information concerning the branch, set this command :
@@ -84,6 +90,10 @@ If you accidently create a new brand and you want to delete it, you can send thi
 DELETE a branch :
 ```
 git branch -d Your_branch_name_you_want_to_delete
+```
+For forcing the branch delete, you can set this command.
+```
+git branch -D Your_branch_name_you_want_to_force_delete
 ```
 
 You can control the creation of your branch with sending this command.
