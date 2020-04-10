@@ -14,6 +14,20 @@ Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 # Git commands
 
+## Initialize a deposit
+
+For initialize a deposit, send this command in a psecific directory :
+```
+git init.
+```
+
+## ADD a file in your repository
+For adding a file, create a file in your local working directory. After this, send this command for add this file in the roepository :
+```
+git add Your_file_name
+git commit
+```
+
 ## Clone project
 
 Open in your web browser the project in github that you want to clone.
@@ -64,6 +78,12 @@ git branch
 For create a branch set this command :
 ```
 git branch branch_name
+```
+
+If you accidently create a new brand and you want to delete it, you can send this command.
+DELETE a branch :
+```
+git branch -d Your_branch_name_you_want_to_delete
 ```
 
 You can control the creation of your branch with sending this command.
