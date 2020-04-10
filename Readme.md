@@ -14,6 +14,8 @@ Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 # Git commands
 
+![3 zones of git and github](images/github_informations.jpg)
+
 ## Initialize a deposit
 
 For initialize a deposit, send this command in a psecific directory :
@@ -34,7 +36,7 @@ Open in your web browser the project in github that you want to clone.
 
 Copy and paste the link.
 
-![Copy button using for clone project](https://github.com/sulpub/GitHub_informations/images/github_commit.png)
+![Copy button using for clone project](images/github_commit.jpg)
 
 
 To clone project set this command in a specific directory in your computer :
@@ -94,7 +96,10 @@ DELETE a branch :
 ```
 git branch -d Your_branch_name_you_want_to_delete
 ```
+
 For forcing the branch delete, you can set this command.
+***Important: when you use -D, you force the erasement of the file and all history information for this branch.***
+
 ```
 git branch -D Your_branch_name_you_want_to_force_delete
 ```
