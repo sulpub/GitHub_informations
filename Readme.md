@@ -79,6 +79,29 @@ This command see you the status of you file :
 git status
 ```
 
+## Make a delivery file
+To make a temporary saving file after some accidently modification, you can send this command:
+```
+git stash
+```
+with this command you backup temporary your modification and you recover your original file after modification.
+
+You ca see these saving temprorary file by using this command :
+```
+git stash list
+```
+
+After that you can create a branch, enter in this branch and send this command to recover your modifications on the 
+stash backup :
+```
+git stash apply
+```
+
+if you made a lot of stash bachup and you want recover a specific stash, after sending the "git stash list", you can  recover with this command :
+```
+git stash apply stash@{0}
+```
+
 ## Branch
 
 To know information concerning the branch, set this command :
