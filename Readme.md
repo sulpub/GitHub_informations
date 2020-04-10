@@ -109,6 +109,12 @@ if you made a lot of stash bachup and you want recover a specific stash, after s
 git stash apply stash@{0}
 ```
 
+## Change the message of the last commit
+You can change the message on the last commit if you make somes misstakes with this command :
+```
+git commit --amend -m "Your new message of the last commit"
+```
+
 ## Branch
 
 To know information concerning the branch, set this command :
