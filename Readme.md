@@ -40,6 +40,19 @@ git commit -m “Information concernig you modification for explanation”
 ```
 Note : For each commit it's really important to explain yours modifications.
 
+## PUSH the update to the server
+
+To send your modification on the external repository, send this command :
+```
+git push
+```
+
+## PULL for update your local repository
+
+To receive the last external modification, send this command :
+```
+git pull
+```
 
 ## Branch
 
