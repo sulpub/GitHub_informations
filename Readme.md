@@ -115,6 +115,22 @@ You can change the message on the last commit if you make somes misstakes with t
 git commit --amend -m "Your new message of the last commit"
 ```
 
+## Deposit a forgotten file in the last commit
+If you forget files on your last commit, you can add these file with these commands :
+```
+git add Your_forgotten_file
+git commit --amend --no-edit
+```
+
+## CRITICAL ERROR on your last commit
+If you push a corrupted file on the public server, you have one possibility for correct the problem with doing this command
+```
+git revert HEAD^
+```
+IMPORTANT : With this command you correct you mistake, but you can lose local file if you don't make a backup.
+
+NOTA : ***git reset HEAD*** cancel the change not committed.
+
 ## Branch
 
 To know information concerning the branch, set this command :
