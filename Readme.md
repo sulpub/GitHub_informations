@@ -11,3 +11,13 @@ My usual commands :
 
 # Basic formating
 Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
+
+# Git commands
+
+## Branch
+
+To know information concerning the branch, set this command :
+```
+git branch
+```
+
