@@ -31,6 +31,16 @@ Set this command :
 TO FILL
 ```
 
+## Commit a project
+
+After made some program modification or creating some file, you can commit your modifications by sending this command :
+
+```
+git commit -m “Information concernig you modification for explanation”    
+```
+Note : For each commit it's really important to explain yours modifications.
+
+
 ## Branch
 
 To know information concerning the branch, set this command :
