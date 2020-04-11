@@ -202,6 +202,17 @@ The rebase let your historical more readable and more understandable.
 
 IMPORTANT : You never use the rebase on a public deposit, because you lose the historical information.
 
+With ***git rebase interactive*** you can change the historical order with using the SHA number.
+For example :
+```
+git log  //capture the eight digit of the master
+
+git rebase -i eight_digit_SHA_master  
+//open an editor for reorganize the commit order by permuting the ligne of the diferent commit
+
+git log //to see the change
+```
+
 ## Branch
 
 To know information concerning the branch, set this command :
