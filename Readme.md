@@ -84,6 +84,18 @@ To receive the last external modification, send this command :
 git pull
 ```
 
+NOTA : Git pull replace your local file and you lose your modification.
+
+## FETCH and MERGE for update your local repository
+
+To receive the last external modification and not affect your local file, send this command :
+```
+git fetch
+git merge //for controle the merge local and distant file.
+```
+
+NOTA : Git fetch create a duplicate file. For the gestion of your merge local file and external file, you can use the git merge command. PULL = FETCH + MERGE
+
 ## SEE the status of the file
 This command see you the status of you file :
 ```
