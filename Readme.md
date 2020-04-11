@@ -249,3 +249,7 @@ For enter in the new branch send this command.
 git checkout your_branch_name
 ```
 You are now in your virtualy branch. To see the changing branch send the git branch and see that the star is positioning in your new branch.
+
+## CLEAN the branchs
+
+
