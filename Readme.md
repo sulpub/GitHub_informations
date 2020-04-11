@@ -189,11 +189,28 @@ To return at a specific commit, you run the git reflog and note the SHA number. 
 git checkout SHA_number
 ```
 
-## SEE the moficication of your files
+## SEE the modifications of your files
 
-To see the date, author and modification a a commit file, you cane use this command
+To see the date, author and modifications of a commit file, you can use this command
 ```
 git blame File_to_see_modification
+```
+
+## Git REBASE
+
+The rebase let your historical more readable and more understandable.
+
+IMPORTANT : You never use the rebase on a public deposit, because you lose the historical information.
+
+With ***git rebase interactive*** you can change the historical order with using the SHA number.
+For example :
+```
+git log  //capture the eight digit of the master
+
+git rebase -i eight_digit_SHA_master  
+//open an editor for reorganize the commit order by permuting the ligne of the diferent commit
+
+git log //to see the change
 ```
 
 ## Branch
@@ -232,3 +249,34 @@ For enter in the new branch send this command.
 git checkout your_branch_name
 ```
 You are now in your virtualy branch. To see the changing branch send the git branch and see that the star is positioning in your new branch.
+
+## CLEAN or ERASE some not important commit
+
+For cleaning some commits, you can use these command :
+```
+git rebase -i HEAD~2   //for access at the two last commit
+drop SHA_file_commit1 commit1       //for deleting the commit1
+drop SHA_file_commit2 commit2       //for deleting the commit2
+```
+You can use these function to clean the history of the deposit.
+
+## CLEAN or ERASE branch
+To erase some brand, you can proceed like this :
+```
+git branch -d branch_to_erase
+```
+
+##SQUASH for cleaning your commit
+With the squash function, you can concatenate and clean your commit.
+Using squash for example like this :
+```
+git rebase -i HEAD~4  //running and rebase interactive on the last 4 commit
+pick 5ed5ab87 add information 1
+squash 98efab23 add information 2
+squash e53ABC57 add information 3
+squash 1a23q5f7 add information 4
+```
+After these task, git concatenate all information and file in the same commit. That reducte de number of commit.
+
+
+
