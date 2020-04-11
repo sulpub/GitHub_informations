@@ -12,7 +12,9 @@ My usual commands :
 # Basic formating
 Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
-
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
 
 # Git commands
 
@@ -153,6 +155,34 @@ git reset specific_commit --hard
 ```
 
 NOTA : The difference between Revert and Reset is that Reset go to the last commit without put a commit. And Revert make a commit of the second last commit and forget the bad last commit. For me the best way is to used Revert.
+
+## LOG and JUMP at a specific commit
+
+The git log permit to see the historic of your project by invert saving time. The last commit appear at the beginning.
+
+This command is :
+```
+git log
+```
+
+An another interesting command is ***git reflog***
+This command permit to see the SHA identification to allow you to jump in a specific commit if you want to forget some code evolution
+The command log to she the SHA of all commit is:
+```
+git reflog
+```
+
+To return at a specific commit, you run the git reflog and note the SHA number. So you can jump at the specific SHA commit if you want to not include a new function. The command is :
+```
+git checkout SHA_number
+```
+
+## SEE the moficication of your files
+
+To see the date, author and modification a a commit file, you cane use this command
+```
+git blame File_to_see_modification
+```
 
 ## Branch
 
