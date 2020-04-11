@@ -12,6 +12,8 @@ My usual commands :
 # Basic formating
 Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
+
+
 # Git commands
 
 ![3 zones of git and github](images/github_informations.jpg)
@@ -36,7 +38,7 @@ Open in your web browser the project in github that you want to clone.
 
 Copy and paste the link.
 
-![Copy button using for clone project](images/github_commit.jpg)
+![Copy button using for clone project](images/github_commit.png)
 
 
 To clone project set this command in a specific directory in your computer :
@@ -86,7 +88,7 @@ This command see you the status of you file :
 git status
 ```
 
-## Make a delivery file
+## Make a delivery file (STASH)
 To make a temporary saving file after some accidently modification, you can send this command:
 ```
 git stash
@@ -130,6 +132,25 @@ git revert HEAD^
 IMPORTANT : With this command you correct you mistake, but you can lose local file if you don't make a backup.
 
 NOTA : ***git reset HEAD*** cancel the change not committed.
+
+
+## GIT RESET
+There are tree git reset (soft, medium and hard)
+
+The ***reset soft*** put a commit issue of the specific commit when you make some mistake. You don't lose file and the HEAD is not detach.
+```
+git reset --Soft 
+```
+
+The ***reset mixed*** put a commit of the the second last commit or a specific commit. This commit don't modify your current local file. No file wil be delete. But you detach the HEAD.
+```
+git reset --mixed 
+```
+
+The ***reset hard*** should be used with very attention. with this command, the history will be erase after your specific commit that you want tu reset.All the commit and branch associated with this commit will be delete. 
+```
+git reset specific_commit --hard 
+```
 
 ## Branch
 
