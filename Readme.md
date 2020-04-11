@@ -20,7 +20,7 @@ Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
 ## Initialize a deposit
 
-For initialize a deposit, send this command in a psecific directory :
+For initialize a deposit, send this command in a specific directory :
 ```
 git init.
 ```
@@ -132,7 +132,7 @@ git revert HEAD^
 IMPORTANT : With this command you correct you mistake, but you can lose local file if you don't make a backup.
 
 NOTA : ***git reset HEAD*** cancel the change not committed.
-
+NOTA : The difference between Revert and Reset is that Reset go to the last commit without put a commit. And Revert make a commit of the second last commit and forget the bad last commit. For me the best way is to used Revert.
 
 ## GIT RESET
 There are tree git reset (soft, medium and hard)
@@ -151,6 +151,8 @@ The ***reset hard*** should be used with very attention. with this command, the 
 ```
 git reset specific_commit --hard 
 ```
+
+NOTA : The difference between Revert and Reset is that Reset go to the last commit without put a commit. And Revert make a commit of the second last commit and forget the bad last commit. For me the best way is to used Revert.
 
 ## Branch
 
