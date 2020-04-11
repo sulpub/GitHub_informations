@@ -189,12 +189,18 @@ To return at a specific commit, you run the git reflog and note the SHA number. 
 git checkout SHA_number
 ```
 
-## SEE the moficication of your files
+## SEE the modifications of your files
 
-To see the date, author and modification a a commit file, you cane use this command
+To see the date, author and modifications of a commit file, you can use this command
 ```
 git blame File_to_see_modification
 ```
+
+## Git REBASE
+
+The rebase let your historical more readable and more understandable.
+
+IMPORTANT : You never use the rebase on a public deposit, because you lose the historical information.
 
 ## Branch
 
