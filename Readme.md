@@ -279,4 +279,29 @@ squash 1a23q5f7 add information 4
 After these task, git concatenate all information and file in the same commit. That reducte de number of commit.
 
 
+## GIT bisect debug software
+Git offer the possibility to find a bug with the bisect function. To realize this, we indicate to git the commit where they are not problem and the commit where we are  the bug. For example :
+```
+git log //to knwow the SHA between good and bug commit where we detetct the problem
+git bisect start SHA_bug_commit SHA_good_commit  //git navigate on all commits between bug and good and ask us if we detect the problem. 
+git bisect good  //if ok
+git bisect bad //if problem 
+```
+At the end git indicate the commit where they are a problem. Now we can start debugging the software.
+
+## ADD external git to your project
+The **git submodule** allow to you to include and another git deposit in your project.
+To do this you call this function :
+```
+git submodule add web_link_project_submodule your_specific_local_directory
+// this command add the external deposit as a submodule.
+// git add a new file .gitmodules that contain the descritpion of the submodule in the project.
+```
+
+## git subtree
+To push your new submodule on your external github, you can use the subtree function that allow to push the new submodule on your external deposit and remenber the historical of the submodule.
+I you copy paste all file manualy you lose the historical of the submodule commit. to do tjis you can write this command :
+```
+git subtree push -P My_new_submodule_directory git@my_git_server:group/projet.git master
+```
 
