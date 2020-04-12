@@ -66,7 +66,7 @@ git push
 After made some program modification or creating some file, you can commit your modifications by sending this command :
 
 ```
-git commit -m “Information concernig you modification for explanation”    
+git commit -m “Information concernig you modification for explanation”
 ```
 Note : For each commit it's really important to explain yours modifications.
 
@@ -304,4 +304,116 @@ I you copy paste all file manualy you lose the historical of the submodule commi
 ```
 git subtree push -P My_new_submodule_directory git@my_git_server:group/projet.git master
 ```
+
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+# GIT FLOW
+
+git flow is using to manage a global projet with git
+
+To init the git flow set this command :
+```
+git flow init 
+```
+
+by default, the git create the master and the developement branch. After you can developp some branch for your differents features.
+The flow architecture depending of your developement team.
+
+by default git flow propose this architecture, but it's for information :
+```
+master  o--------------------------------o-----
+           \ \ \ \ \                    /
+Hot fix     \ \ \ \ o-----------o------/
+             \ \ \ \                  /
+Developpement \ \ \ o--o---o----o----/
+               \ \ \                /
+feature1        \ \ o----o-oo-o----/
+		 \ \              /
+Feature2	  \ o-o--o-o-----/
+		   \            / 
+Release		    o----------o
+
+```
+
+note : GitFlow was created by Vincent Driessen.
+
+To add a main feature branch you send this command :
+```
+git flow feature start main
+```
+With this command you go to the main feature branch
+
+
+## Git MARKET
+Git market was be created in 2017.
+They are 5 categories :
+ 1. Code quality
+ 2. code analysis
+ 3. Continue integration
+ 4. project monitoring and management.
+ ______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+# GITLAB
+
+GitLab is a service that stores repositories using the Git backbone, just like GitHub.
+
+Gitlab has more modern tools than Github. One of GitLab's main competitors is Jenkins.
+
+GitLab include these functionalities :
+ 1. Test software.
+ 2. Application packaging.
+ 3. Continue integration.
+ 4. Continue deployement.
+ 5. Monitoring software.
+ 6. Application security.
+
+Gitlab has these characteristics :
+ 1. Allows hosting web projects.
+ 2. Managing source code versions.
+ 3. Management of the whole development process.
+ 4. Allows simple collaboration.
+ 5. Open source and collaborative.
+ 6. Free.
+ 7. It is also a solution for businesses.
+
+## CONTINUOUS INTEGRATION
+
+The CI (**Continuous Integration**) allows a faster and less destabilizing code integration, since the code is integrated progressively, at a faster rate than with other development approaches.
+
+With this approach after a commit **CI pipeline** can build, make test and integration test.
+With **Continuous Deployement CD** the system can review; taging and make the code in production.
+
+To use the CI and CD, you must open an account on Gitlab.
+
+To configure continuous integration, we must first create in our repository a **.gitlab-ci.yml** file which will list the different tasks to perform. 
+
+When GitLab detects a .gitlab-ci.yml file, it will automatically try to execute the steps with runners.
+
+In the **.yml** file, we will be able to put :
+ 1. The stages of test
+ 2. Construction
+ 3. Deployment
+ 4. Notification.
+
+
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+# Have contributors
+On Github, if you want to have more visibility, it's important to answer to the sollicitation of your contributors.
+
+To do this, you can do these tasks :
+ 1. Answer to the pull request
+ 2. stick your project (Build stick, vulnarabilities numbers, coverage project...)
+ 3. Code lisibilities
+ 4. line numbers of your file
+ 5. Code understanding
+ 6. Bugs and issues management
+
+
 
