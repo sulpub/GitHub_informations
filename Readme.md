@@ -12,6 +12,10 @@ My usual commands :
 # Basic formating
 Link : https://help.github.com/en/articles/basic-writing-and-formatting-syntax
 
+## Highlight special line in code
+For highlighting the special line of the code you can create a link like this :
+**link_with#L4  //for highlight line 4**
+
 ______________________________________________________________________________________________________________________
 ______________________________________________________________________________________________________________________
 ______________________________________________________________________________________________________________________
